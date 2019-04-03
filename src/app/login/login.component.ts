@@ -33,10 +33,6 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-
-
-
-
   login() {
     this.http.get('https://api.mlab.com/api/1/databases/codefest/collections/users/?apiKey=zzoeSGcNjMLtwaPPxqOukd4Jllas2BTs').
       subscribe((response) => {
