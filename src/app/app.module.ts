@@ -30,7 +30,7 @@ import { NavInfoComponent } from './nav-info/nav-info.component';
 import { BorrowInfoComponent } from './borrow-info/borrow-info.component';
 import { AccountInfoComponent } from './account-info/account-info.component';
 import { EbucksInfoComponent } from './ebucks-info/ebucks-info.component';
-
+import {Globals} from 'src/app/global';
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,7 +66,7 @@ import { EbucksInfoComponent } from './ebucks-info/ebucks-info.component';
     FormsModule,
     NgbModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
