@@ -19,6 +19,9 @@
         <div *ngIf=globals.isLoggedIn>
             <div class="column"><a href="" class=" " routerLink="/leaderboard">Account</a></div>
         </div>
+        <div *ngIf=globals.isLoggedIn>
+          <div class="column"><a href="" class=" " (click)='logout()'>Log out</a></div>
+        </div>
               
 
 
