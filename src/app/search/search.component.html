@@ -1,0 +1,60 @@
+<section class="hero is-primary"
+  style="background-image: url('https://www.fnbzambia.co.zm/00Assets/zm/images/insurance/bancassurance/landing.jpg')">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Search
+      </h1><br />
+
+    </div>
+  </div>
+</section>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-1"> </div>
+        <div class="column">
+        <div id="search-component">
+          <h4>Product Search</h4>
+
+          <input #searchBox id="search-box" class="input" [(ngModel)]="username" />
+          <input class="button" (click)='search()' value="Submit input">
+
+          <br /><br />
+
+          <div class="card" *ngIf="response">
+            <header class="card-header">
+              <p class="card-header-title">
+                {{response.name}}
+              </p>
+
+            </header>
+            <div class="card-content">
+              <div class="content">
+                 {{response.email}}
+                <a href="#">{{response.username}}</a>. <a href="#">#css</a> <a href="#">{{response.phone}}</a>
+                <br>
+                <time datetime="2016-1-1">{{response.website}}</time>
+              </div>
+            </div>
+<footer class="card-footer">
+  <a href="#" class="card-footer-item">Know more</a>
+  <a routerLink="/daily_quiz" class="card-footer-item">Take Quiz</a>
+
+</footer>
+          </div>
+
+
+
+        </div>
+
+
+        </div>
+        <div class="column is-1"> </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>

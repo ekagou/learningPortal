@@ -1,36 +1,35 @@
-<div class="columns ">
-
-
-</div>
-<section class="hero is-small is-primary is-bold" style="background:#00A9AC;">
-  <div class="hero-body">
-    <div class="container">
-      <div class="columns">
-        <div class="column is-8">
-          <h1 class="title">
-            Learning Centre
-          </h1>
-        </div>
-        <div class="column is-1"><a href="">Feedback</a></div>
-        <div class="column is-1"><a href="" class="">Register</a></div>
-        <div class="column">
-      <a href="" class=" ">Login</a></div>
-      </div>
-
-
-    </div>
-  </div>
-</section>
-<br /><br />
+<br/><br/>
 
 <div class="columns">
   <div class="column is-3"></div>
   <div class="column">
       <div class="field has-addon">
         <div class="control">
-          <input class="input" type="text" placeholder="Find a repository">
+          <input class="input" type="text"  [(ngModel)]="username"   placeholder="Find a repository">
+          <input class="button" (click)='search()' value="Submit input">
         </div>
 
+      </div>
+      <div class="card" *ngIf="response">
+        <header class="card-header">
+          <p class="card-header-title">
+            {{response.name}}
+          </p>
+
+        </header>
+        <div class="card-content">
+          <div class="content">
+            {{response.email}}
+            <a href="#">{{response.username}}</a>. <a href="#">#css</a> <a href="#">{{response.phone}}</a>
+            <br>
+            <time datetime="2016-1-1">{{response.website}}</time>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <a href="#" class="card-footer-item">Learn more</a>
+          <a routerLink="/daily_quiz" class="card-footer-item">Take a Quiz</a>
+
+        </footer>
       </div>
     <div class="card">
 
