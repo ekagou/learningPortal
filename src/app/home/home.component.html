@@ -37,8 +37,8 @@
         </div>
         <footer class="card-footer" >
 
-          <a href='{{response.productName | lowercase}}' class="card-footer-item">learn more about product</a>
-          <a routerLink='{{response.productName | lowercase}}quiz' class="card-footer-item">Take a Quiz</a>
+          <a href='{{response.productName | lowercase}}' class="card-footer-item">learn more about this product</a>
+         <!--<a routerLink='{{response.productName | lowercase}}quiz' class="card-footer-item">Take a Quiz</a>-->
 
         </footer>
       </div>
@@ -55,32 +55,32 @@
             </div>
             <div *ngIf=globals.isLoggedIn class="column">
                 <img src="src/ebucks.icon.xhdpi.png" alt="Placeholder image" style="filter:grayscale(100%)"><br/>
-                <a href="" class="category" routerLink="/learn-more-ebucks">eBucks</a>
+                <a href="" class="category" routerLink="/ebucks">eBucks</a>
             </div>
 
             <div class="column">
               <img src="src/geopayments.icon.xhdpi.png" alt="Placeholder image"><br />
-              <a href="" class="category" routerLink="/learn-more-payments">Payments</a>
+              <a href="" class="category" routerLink="/payment">Payments</a>
             </div>            
                         
             <div *ngIf=!globals.isLoggedIn class="column"><img src="src/accounts.v1.icon.xhdpi.png" alt="Placeholder image"><br/>
-              <a href="" class="category" routerLink="/learn-more-accounts">Accounts</a>
+              <a href="" class="category" routerLink="/private">Accounts</a>
             </div>
             <div *ngIf=globals.isLoggedIn class="column"><img src="src/accounts.v1.icon.xhdpi.png" style="filter:grayscale(100%)" alt="Placeholder image"><br/>
-              <a href="" class="category" routerLink="/learn-more-accounts">Accounts</a>
+              <a href="" class="category" routerLink="/private">Accounts</a>
             </div>       
 
           </div>
 
           <div class="columns">
             <div class="column"> <img src="src/homeloans.default.icon.v1.xhdpi.png" alt="Placeholder image"><br/>
-            <a href="" class="category" routerLink="/learn-more-nav">Nav</a>
+            <a href="" class="category" routerLink="/nav">Nav</a>
             </div>
             <div class="column"> <img src="src/ssa.loans.personalloan.xhdpi.png" alt="Placeholder image"><br />
-              <a href="" class="category" routerLink="/learn-more-borrow">Borrow</a>
+              <a href="" class="category" routerLink="/borrow">Borrow</a>
             </div>
             <div class="column"><img src="src/account.ewallet.iconv3.xhdpi.png" alt="Placeholder image"><br />
-              <a href="" class="category" routerLink="/learn-more-invest">Invest</a>
+              <a href="" class="category" routerLink="/invest">Invest</a>
             </div>
           </div>
         </div>
