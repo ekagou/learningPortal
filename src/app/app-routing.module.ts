@@ -31,7 +31,7 @@ const routes: Routes = [
   { path: 'search', component: SearchComponent },
   { path: 'results', component: QuizResultsComponent },
   { path: 'transact', component: TransactComponent },
-  { path: 'private', component: PrivateComponent },
+  { path: 'private_old', component: PrivateComponent },
   { path: 'premier', component: PremierComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
@@ -45,8 +45,8 @@ const routes: Routes = [
   { path: 'learn-more-invest', pathMatch: 'prefix', component: InvestInfoComponent},
   { path: 'learn-more-nav', pathMatch: 'prefix', component: NavInfoComponent},
   { path: 'learn-more-borrow', pathMatch: 'prefix', component: BorrowInfoComponent},
-  { path: 'learn-more-accounts', pathMatch: 'prefix', component: AccountInfoComponent},
-  { path: 'learn-more-ebucks', pathMatch: 'prefix', component: EbucksInfoComponent},
+  { path: 'private', pathMatch: 'prefix', component: AccountInfoComponent},
+  { path: 'ebucks', pathMatch: 'prefix', component: EbucksInfoComponent},
 
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

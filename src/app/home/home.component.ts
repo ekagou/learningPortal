@@ -29,6 +29,9 @@ export class HomeComponent implements OnInit {
     if (this.username == "wealth") {
       this.id = "300";
     } 
+    if (this.username == "ebucks") {
+      this.id = "400";
+    }
     console.log(this.username);
     //this.http.get('https://jsonplaceholder.typicode.com/users/' + this.id).
     this.http.get('https://api.mlab.com/api/1/databases/codefest/collections/products/'+this.id+'?apiKey=zzoeSGcNjMLtwaPPxqOukd4Jllas2BTs').

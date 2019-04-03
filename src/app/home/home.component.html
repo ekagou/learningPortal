@@ -9,7 +9,7 @@
       <div class="field has-addons">
 
         <p class="control is-expanded">
-          <input class="input" type="text"  [(ngModel)]="username" placeholder="Amount of money">
+          <input class="input" type="text"  [(ngModel)]="username" placeholder="Search for product">
         </p>
         <p class="control">
           <input class="button" (click)='search()' value="Search for Product">
@@ -34,7 +34,7 @@
         <footer class="card-footer" >
 
           <a href='{{response.productName | lowercase}}' class="card-footer-item">learn more about product</a>
-          <a routerLink="/daily_quiz" class="card-footer-item">Take a Quiz</a>
+          <a routerLink='{{response.productName | lowercase}}quiz' class="card-footer-item">Take a Quiz</a>
 
         </footer>
       </div>
@@ -47,14 +47,14 @@
           <div class="columns">
             <div class="column">
               <img src="src/ebucks.icon.xhdpi.png" alt="Placeholder image"><br/>
-              <a href="" class="category" routerLink="/learn-more-ebucks">eBucks</a>
+              <a href="" class="category" routerLink="/ebucks">eBucks</a>
             </div>
             <div class="column">
               <img src="src/geopayments.icon.xhdpi.png" alt="Placeholder image"><br />
               <a href="" class="category" routerLink="/learn-more-payments">Payments</a>
             </div>
             <div class="column"><img src="src/accounts.v1.icon.xhdpi.png"  alt="Placeholder image"><br/>
-              <a href="" class="category" routerLink="/learn-more-accounts">Accounts</a>
+              <a href="" class="category" routerLink="/private">Accounts</a>
             </div>              
           </div>
 
