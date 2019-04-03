@@ -43,11 +43,14 @@ export class LoginComponent implements OnInit {
         this.response = response;
         console.log(response[1].email);
         var i;
-        for (i = 0; i < response.length; i++) { 
+        for (i = 0; i < Object.keys(response).length; i++) { 
           if (this.username == response[i].email && this.password == response[i].password){
             console.log("log in successfull");  
             this.globals.isLoggedIn = true;
             this.router.navigate(['/home'])
           }
         }
-}}
+      })
+
+    } 
+  }
