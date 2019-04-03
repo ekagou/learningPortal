@@ -6,6 +6,9 @@ import { DailyQuizComponent } from './daily-quiz/daily-quiz.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { SearchComponent} from './search/search.component';
 import { QuizResultsComponent } from './quiz-results/quiz-results.component';
+import { TransactComponent } from './transact/transact.component';
+import { PrivateComponent } from './private/private.component';
+import { PremierComponent } from './premier/premier.component';
 
 
 const routes: Routes = [
@@ -15,6 +18,9 @@ const routes: Routes = [
   { path: 'feedback', component: FeedbackComponent },
   { path: 'search', component: SearchComponent },
   { path: 'results', component: QuizResultsComponent },
+  { path: 'transact', component: TransactComponent },
+  { path: 'private', component: PrivateComponent },
+  { path: 'premier', component: PremierComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 

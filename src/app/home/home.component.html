@@ -31,8 +31,9 @@
             <time datetime="2016-1-1">{{response.website}}</time>
           </div>
         </div>
-        <footer class="card-footer">
-          <a href="#" class="card-footer-item">Learn more</a>
+        <footer class="card-footer" >
+
+          <a href='{{response.productName | lowercase}}' class="card-footer-item">learn more about product</a>
           <a routerLink="/daily_quiz" class="card-footer-item">Take a Quiz</a>
 
         </footer>

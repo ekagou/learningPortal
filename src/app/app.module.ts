@@ -12,7 +12,9 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { SearchComponent } from './search/search.component';
 import { QuizResultsComponent } from './quiz-results/quiz-results.component';
 import { ProductService } from './services/product.service';
-
+import { TransactComponent } from './transact/transact.component';
+import { PrivateComponent } from './private/private.component';
+import { PremierComponent } from './premier/premier.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,10 @@ import { ProductService } from './services/product.service';
     HomeComponent,
     FeedbackComponent,
     SearchComponent,
-    QuizResultsComponent
+    QuizResultsComponent,
+    TransactComponent,
+    PremierComponent,
+    PrivateComponent
   ],
   imports: [
     BrowserModule,
