@@ -18,6 +18,18 @@ import { PrivateComponent } from './private/private.component';
 import { PremierComponent } from './premier/premier.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AccountQuizComponent } from './account-quiz/account-quiz.component';
+import { EbucksQuizComponent } from './ebucks-quiz/ebucks-quiz.component';
+import { LoanquizComponent } from './loanquiz/loanquiz.component';
+import { PaymentsComponent } from './payments/payments.component';
+import { NavComponent } from './nav/nav.component';
+import { InvestComponent } from './invest/invest.component';
+import { PaymentsInfoComponent } from './payments-info/payments-info.component';
+import { InvestInfoComponent } from './invest-info/invest-info.component';
+import { NavInfoComponent } from './nav-info/nav-info.component';
+import { BorrowInfoComponent } from './borrow-info/borrow-info.component';
+import { AccountInfoComponent } from './account-info/account-info.component';
+import { EbucksInfoComponent } from './ebucks-info/ebucks-info.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +44,19 @@ import { RegisterComponent } from './register/register.component';
     PremierComponent,
     PrivateComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AccountQuizComponent,
+    EbucksQuizComponent,
+    LoanquizComponent,
+    PaymentsComponent,
+    NavComponent,
+    InvestComponent,
+    PaymentsInfoComponent,
+    InvestInfoComponent,
+    NavInfoComponent,
+    BorrowInfoComponent,
+    AccountInfoComponent,
+    EbucksInfoComponent
   ],
   imports: [
     BrowserModule,

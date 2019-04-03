@@ -1,0 +1,274 @@
+<style>
+  .privew {
+    margin-bottom: 20px;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+  }
+.questionsBox {
+    display: block;
+    border: solid 1px #e3e3e3;
+    padding: 10px 20px 0px;
+    box-shadow: inset 0 0 30px rgba(000,000,000,0.1), inset 0 0 4px rgba(255,255,255,1);
+    border-radius: 3px;
+    margin: 0 10px;
+}.questions {
+    background: #60bcd3;
+    color: #FFF;
+    font-size: 22px;
+    padding: 8px 30px;
+    font-weight: 300;
+    margin: 0 -30px 10px;
+    position: relative;
+}
+.questions:after {
+    background: url(../img/icon.png) no-repeat left 0;
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 9px;
+    height: 7px;
+    content: '.';
+    left: 0;
+    text-align: left;
+    font-size: 0;
+}
+.questions:after {
+    left: auto;
+    right: 0;
+    background-position: -10px 0;
+}
+.questions:before, .questions:after {
+    background: black;
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 9px;
+    height: 7px;
+    content: '.';
+    left: 0;
+    text-align: left;
+    font-size: 0;
+}
+.answerList {
+    margin-bottom: 15px;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+.answerList li:first-child {
+    border-top-width: 0;
+}
+
+.answerList li {
+    padding: 3px 0;
+}
+.answerList label {
+    display: block;
+    padding: 6px;
+    border-radius: 6px;
+    border: solid 1px #dde7e8;
+    font-weight: 400;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+input[type=checkbox], input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px;
+    line-height: normal;
+}
+.questionsRow {
+    background: #dee3e6;
+    margin: 0 -20px;
+    padding: 10px 20px;
+    border-radius: 0 0 3px 3px;
+}
+.button, .greyButton {
+    background-color: #f2f2f2;
+    color: #888888;
+    display: inline-block;
+    border: solid 3px #cccccc;
+    vertical-align: middle;
+    text-shadow: 0 1px 0 #ffffff;
+    line-height: 27px;
+    min-width: 160px;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 0px;
+    text-transform: capitalize;
+}
+.questionsRow span {
+    float: right;
+    display: inline-block;
+    line-height: 30px;
+    border: solid 1px #aeb9c0;
+    padding: 0 10px;
+    background: #FFF;
+    color: #007fbe;
+}
+.btn.orange {
+  background-color: #e67e22;
+}
+
+.btn.orange:hover, .btn.orange:focus {
+  background-color: #d35400;
+}
+.btn {
+  position: relative;
+
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+
+  overflow: hidden;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  
+  transition: background-color .3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #27ae60;
+}
+
+.btn > * {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  display: block;
+  width: 0;
+  padding-top: 0;
+    
+  border-radius: 100%;
+  
+  background-color: rgba(236, 240, 241, .3);
+  
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+</style>
+<div class="privew wrapper">
+    <div class="questionsBox">
+        <div class="questions">Select all FNB Account Types</div>
+        <ul class="answerList">
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="0" id="answerGroup_0"> Red Account</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="1" id="answerGroup_1"> Gold Account</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="2" id="answerGroup_2"> Yellow Account</label>
+            </li>
+            
+        </ul>
+    </div>
+</div><hr width="50%" style="margin:0 auto">
+<div class="privew wrapper">
+    <div class="questionsBox">
+        <div class="questions">Private Clients have an annual income of</div>
+        <ul class="answerList">
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="0" id="answerGroup_0"> R30 000 - R50 000</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="1" id="answerGroup_1"> R50 000 - R60 000</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="2" id="answerGroup_2">R750 000 - R60 000</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="3" id="answerGroup_3"> All The Above</label>
+            </li>
+        </ul>
+    </div>
+</div><hr width="50%" style="margin:0 auto">
+<div class="privew wrapper">
+    <div class="questionsBox">
+        <div class="questions">Easy Account should have a minimum income of</div>
+        <ul class="answerList">
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="0" id="answerGroup_0"> >R10 000</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="1" id="answerGroup_1"> >20 000</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="2" id="answerGroup_2"> No minimum income</label>
+            </li>
+          
+        </ul>
+    </div>
+</div><hr width="50%" style="margin:0 auto">
+<div class="privew wrapper">
+    <div class="questionsBox">
+        <div class="questions">Where can you apply for an FNB account?</div>
+        <ul class="answerList">
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="0" id="answerGroup_0"> On the FNB app</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="1" id="answerGroup_1">Go into branch</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="2" id="answerGroup_2"> FNB Online</label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" name="answerGroup" value="3" id="answerGroup_3"> All of the above </label>
+            </li>
+        </ul>
+    </div>
+</div><hr width="50%" style="margin:0 auto">
+<button class="btn orange" type="submit" style="margin-right:150px;"><span>Submit</span></button>
