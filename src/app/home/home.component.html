@@ -3,13 +3,19 @@
 <div class="columns">
   <div class="column is-3"></div>
   <div class="column">
-      <div class="field has-addon">
-        <div class="control">
-          <input class="input" type="text"  [(ngModel)]="username"   placeholder="Find a repository">
-          <input class="button" (click)='search()' value="Submit input">
-        </div>
 
+
+
+      <div class="field has-addons">
+
+        <p class="control is-expanded">
+          <input class="input" type="text"  [(ngModel)]="username" placeholder="Amount of money">
+        </p>
+        <p class="control">
+          <input class="button" (click)='search()' value="Search for Product">
+        </p>
       </div>
+
       <div class="card" *ngIf="response">
         <header class="card-header">
           <p class="card-header-title">
