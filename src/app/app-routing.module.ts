@@ -46,6 +46,7 @@ const routes: Routes = [
   { path: 'nav', pathMatch: 'prefix', component: NavInfoComponent},
   { path: 'borrow', pathMatch: 'prefix', component: BorrowInfoComponent},
   { path: 'private', pathMatch: 'prefix', component: AccountInfoComponent},
+
   { path: 'ebucks', pathMatch: 'prefix', component: EbucksInfoComponent},
 
   { path: '', redirectTo: '/home', pathMatch: 'full' }
