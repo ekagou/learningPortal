@@ -282,18 +282,21 @@
       <div class="fadeIn first" style="height:60px; width: 100px;">
         <img src="https://www.evian-tourisme.com/content/themes/altimax/dist/img/icons/html/user.svg" id="icon" alt="User Icon" />
       </div>
-  <form class="text-center border border-light p-5"  (ngSubmit)="onSubmit()">
+  <form class="text-center border border-light p-5">
     <p class="h4 mb-4">Learning Portal Login</p>
-    <input type="text"  id="defaultContactFormName" class="form-control mb-4" placeholder="Username">
-    <input type="password" id="defaultContactFormPassword" class="form-control mb-4" placeholder="Password">
+    <input type="text"  id="defaultContactFormName" [(ngModel)]="username" name="username" class="form-control mb-4" placeholder="Username">
+    <input type="password" id="defaultContactFormPassword" [(ngModel)]="password" name="password" class="form-control mb-4" placeholder="Password">
     <br>
     <!-- Send button -->
-    <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
-             type="submit">Login</button>
-  
+    <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect" type="submit" (click)='login()'>Login</button>
             <p>or sign up with:</p>
-  
-        
+            
+
+            <div *ngIf="response">
+            <div>
+                <a class="underlineHover" color="red" href="#"><font color="red">Invalid Credentials!</font></a>
+            </div>
+          </div>        
   </form>
   <!-- Default form contact -->
     <!-- Remind Passowrd -->
