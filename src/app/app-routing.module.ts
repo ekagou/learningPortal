@@ -45,7 +45,7 @@ const routes: Routes = [
   { path: 'learn-more-invest', pathMatch: 'prefix', component: InvestInfoComponent},
   { path: 'learn-more-nav', pathMatch: 'prefix', component: NavInfoComponent},
   { path: 'learn-more-borrow', pathMatch: 'prefix', component: BorrowInfoComponent},
-  { path: 'private', pathMatch: 'prefix', component: AccountInfoComponent},
+  { path: 'learn-more-accounts', pathMatch: 'prefix', component: AccountInfoComponent},
   { path: 'ebucks', pathMatch: 'prefix', component: EbucksInfoComponent},
 
   { path: '', redirectTo: '/home', pathMatch: 'full' }
