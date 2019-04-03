@@ -1,8 +1,6 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" />
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
-<style>
-  /* BASIC */
-  html {
+/* BASIC */
+  
+html {
     background-color: #56baed;
   }
   
@@ -272,35 +270,3 @@
   #icon {
     width:60%;
   }
-    </style>
-  
-  <div class="wrapper fadeInDown ">
-    <div id="formContent">
-      <!-- Tabs Titles -->
-  
-      <!-- Icon -->
-      <div class="fadeIn first" style="height:60px; width: 100px;">
-        <img src="https://www.evian-tourisme.com/content/themes/altimax/dist/img/icons/html/user.svg" id="icon" alt="User Icon" />
-      </div>
-  <form class="text-center border border-light p-5"  (ngSubmit)="onSubmit()">
-    <p class="h4 mb-4">Learning Portal Login</p>
-    <input type="text"  id="defaultContactFormName" class="form-control mb-4" placeholder="Username">
-    <input type="password" id="defaultContactFormPassword" class="form-control mb-4" placeholder="Password">
-    <br>
-    <!-- Send button -->
-    <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
-             type="submit">Login</button>
-  
-            <p>or sign up with:</p>
-  
-        
-  </form>
-  <!-- Default form contact -->
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
-    </div>
-  
-  </div>
-  </div>
-  

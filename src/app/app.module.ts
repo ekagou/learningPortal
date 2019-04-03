@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap'
 import { HttpClientModule, HttpErrorResponse } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { DailyQuizComponent } from './daily-quiz/daily-quiz.component';
@@ -15,6 +16,8 @@ import { ProductService } from './services/product.service';
 import { TransactComponent } from './transact/transact.component';
 import { PrivateComponent } from './private/private.component';
 import { PremierComponent } from './premier/premier.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +30,17 @@ import { PremierComponent } from './premier/premier.component';
     QuizResultsComponent,
     TransactComponent,
     PremierComponent,
-    PrivateComponent
+    PrivateComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]

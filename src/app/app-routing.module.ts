@@ -9,7 +9,8 @@ import { QuizResultsComponent } from './quiz-results/quiz-results.component';
 import { TransactComponent } from './transact/transact.component';
 import { PrivateComponent } from './private/private.component';
 import { PremierComponent } from './premier/premier.component';
-
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: 'leaderboard', component: LeaderboardComponent },
@@ -21,6 +22,8 @@ const routes: Routes = [
   { path: 'transact', component: TransactComponent },
   { path: 'private', component: PrivateComponent },
   { path: 'premier', component: PremierComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];
 
