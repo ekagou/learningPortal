@@ -41,7 +41,7 @@ export class LoginComponent implements OnInit {
         var i;
         for (i = 0; i < Object.keys(response).length; i++) { 
           if (this.username == response[i].email && this.password == response[i].password){
-            console.log("log in successfull");  
+            console.log("log in successfull");
             this.globals.isLoggedIn = true;
             this.globals.name = this.username;
             this.router.navigate(['/home']);
