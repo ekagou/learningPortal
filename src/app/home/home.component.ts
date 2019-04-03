@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SearchComponent } from '../search/search.component';
 import { HttpClient } from '@angular/common/http';
 import { ProductService } from '../services/product.service';
+import {Globals} from 'src/app/global';
 
 @Component({
   selector: 'app-home',
@@ -12,8 +13,9 @@ export class HomeComponent implements OnInit {
   username = '';
   id = "";
   response: any;
-  constructor(private svc: ProductService, private http: HttpClient) {
+  constructor(private svc: ProductService, private http: HttpClient, private globals: Globals) {
     this.svc.printToConsole('Got the service');
+
   }
 
   ngOnInit() {

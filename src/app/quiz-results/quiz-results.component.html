@@ -3,10 +3,9 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        Results
+        eBucks results
       </h1><br />
-      <p class="subttile">Name of Product</p><br/>
-      <h2 class="title">
+       <h2 class="title">
        8/10 Correct
       </h2>
     </div>
@@ -21,9 +20,9 @@
           <h3 class="title">You have earned 20 eBucks</h3>
           <p>To view your reward, please choose a button below</p>
           <br/>
-          <a href="" class="button">Log into your account</a>
-          or
-          <a href="" class="button">Become anFNB citizen</a>
+          <a href="" class="button" *ngIf=globals.isLoggedIn>Log into your account</a>
+         
+          <a href="" class="button">Become an FNB citizen</a>
           <br/><br/><br/>
             <div class="columns">
               <div class="column">
