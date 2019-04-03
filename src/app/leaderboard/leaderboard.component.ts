@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { Globals } from 'src/app/global';
 
 @Component({
-  selector: 'app-leaderboard',
-  templateUrl: './leaderboard.component.html',
-  styleUrls: ['./leaderboard.component.scss']
+  selector: "app-leaderboard",
+  templateUrl: "./leaderboard.component.html",
+  styleUrls: ["./leaderboard.component.scss"]
 })
 export class LeaderboardComponent implements OnInit {
+  constructor(public globals: Globals) {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
