@@ -49,19 +49,21 @@
         <div class="content">
 
           <div class="columns">
-            <div *ngIf=!globals.isLoggedIn class="column">
-              <img src="src/ebucks.icon.xhdpi.png" alt="Placeholder image"><br/>
-              <a href="" class="category" routerLink="/ebucks">eBucks</a>
-            </div>
-            <div *ngIf=globals.isLoggedIn class="column">
-                <img src="src/ebucks.icon.xhdpi.png" alt="Placeholder image" style="filter:grayscale(100%)"><br/>
+
+            <div class="column">
+                <img src="src/ebucks.icon.xhdpi.png" alt="Placeholder image"><br/>
                 <a href="" class="category" routerLink="/ebucks">eBucks</a>
             </div>
 
-            <div class="column">
+            <div *ngIf=!globals.isLoggedIn class="column">
               <img src="src/geopayments.icon.xhdpi.png" alt="Placeholder image"><br />
               <a href="" class="category" routerLink="/payment">Payments</a>
-            </div>            
+            </div>   
+            
+            <div class="column" *ngIf=globals.isLoggedIn>
+                <img src="src/geopayments.icon.xhdpi.png" alt="Placeholder image" style="filter:grayscale(100%)"><br />
+                <a href="" class="category" routerLink="/payment">Payments</a>
+              </div>   
                         
             <div *ngIf=!globals.isLoggedIn class="column"><img src="src/accounts.v1.icon.xhdpi.png" alt="Placeholder image"><br/>
               <a href="" class="category" routerLink="/private">Accounts</a>
