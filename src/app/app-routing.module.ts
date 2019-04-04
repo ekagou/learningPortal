@@ -41,11 +41,12 @@ const routes: Routes = [
   { path: 'paymentsquiz', pathMatch: 'prefix', component: PaymentsComponent},
   { path: 'navquiz', pathMatch: 'prefix', component: NavComponent},
   { path: 'investquiz', pathMatch: 'prefix', component: InvestComponent},
-  { path: 'learn-more-payments', pathMatch: 'prefix', component: PaymentsInfoComponent},
-  { path: 'learn-more-invest', pathMatch: 'prefix', component: InvestInfoComponent},
-  { path: 'learn-more-nav', pathMatch: 'prefix', component: NavInfoComponent},
-  { path: 'learn-more-borrow', pathMatch: 'prefix', component: BorrowInfoComponent},
-  { path: 'learn-more-accounts', pathMatch: 'prefix', component: AccountInfoComponent},
+  { path: 'payment', pathMatch: 'prefix', component: PaymentsInfoComponent},
+  { path: 'invest', pathMatch: 'prefix', component: InvestInfoComponent},
+  { path: 'nav', pathMatch: 'prefix', component: NavInfoComponent},
+  { path: 'borrow', pathMatch: 'prefix', component: BorrowInfoComponent},
+  { path: 'private', pathMatch: 'prefix', component: AccountInfoComponent},
+
   { path: 'ebucks', pathMatch: 'prefix', component: EbucksInfoComponent},
 
   { path: '', redirectTo: '/home', pathMatch: 'full' }

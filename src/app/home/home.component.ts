@@ -34,6 +34,21 @@ export class HomeComponent implements OnInit {
     if (this.username == "ebucks") {
       this.id = "400";
     }
+    if (this.username == "invest") {
+      this.id = "500";
+    }
+    if (this.username == "wealth") {
+      this.id = "600";
+    }
+    if (this.username == "payment") {
+      this.id = "700";
+    }
+    if (this.username == "borrow") {
+      this.id = "800";
+    }
+    if (this.username == "nav") {
+      this.id = "900";
+    }
     console.log(this.username);
     //this.http.get('https://jsonplaceholder.typicode.com/users/' + this.id).
     this.http.get('https://api.mlab.com/api/1/databases/codefest/collections/products/'+this.id+'?apiKey=zzoeSGcNjMLtwaPPxqOukd4Jllas2BTs').
