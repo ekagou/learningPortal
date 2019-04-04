@@ -4,4 +4,5 @@ import { Injectable } from '@angular/core';
 export class Globals {
   isLoggedIn: boolean = false;
   name: string = '';
+  score: string = '';
 }
