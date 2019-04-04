@@ -272,6 +272,45 @@
   #icon {
     width:60%;
   }
+  .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1eb7f4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 380px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
     </style>
   
   <div class="wrapper fadeInDown ">
@@ -289,11 +328,7 @@
     <input type="password" id="defaultContactFormPassword" class="form-control mb-4" placeholder="Password">
     <br>
     <!-- Send button -->
-    <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect"
-             type="submit">Register</button>
-  
-            <p>or sign up with:</p>
-  
+    <button  class="button" type="submit"><span>Register</span></button>
         
   </form>
   <!-- Default form contact -->
